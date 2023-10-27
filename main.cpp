@@ -89,13 +89,24 @@ void Graph::dfs(int start) {
 int main() {
     int size = 10;
     Graph graph(size);
-    graph.addEdge(0, 1);
-    graph.addEdge(0, 2);
-    graph.addEdge(1, 8);
-    graph.addEdge(1, 4);
-    graph.addEdge(6, 3);
-    graph.addEdge(3, 7);
-    graph.addEdge(7, 9);
+    
+    // Test case 1 (size = 10)
+    //graph.addEdge(0, 1);
+    //graph.addEdge(0, 2);
+    //graph.addEdge(1, 8);
+    //graph.addEdge(1, 4);
+    //graph.addEdge(6, 3);
+    //graph.addEdge(3, 7);
+    //graph.addEdge(7, 9);
+
+
+    // Test case 2 (size = 6)
+    //graph.addEdge(0, 2);
+    //graph.addEdge(2, 1);
+    //graph.addEdge(1, 0);
+    //graph.addEdge(3, 4);
+    //graph.addEdge(4, 5);
+    //graph.addEdge(5, 3);
 
     graph.resizeVisited();
     graph.resizeConnectedComponents();
